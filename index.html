@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="https://freesvg.org/img/ee03f54c.png"/>
+    <link rel="stylesheet" href="treasurehunt.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet">
+    <title>Treasure Hunt Challenge</title>
+</head>
+
+<body>
+    <h1>Treasure Hunt Game</h1> <img id= "treasure" src="https://freesvg.org/img/ee03f54c.png" alt="treasureChest" height="200px">
+    <h2>Get Ready to Find Some Gold</h2>
+    <div>
+        <ul class="rules">
+            <li>Click the boxes to reveal what's on the map</li>
+            <li>If you click on the bomb, you lose</li>
+            <li>If you click on the treasure, you win</li>
+        </ul>
+    </div>
+
+    <div>
+        <table cellspacing=0 id="gameboard" border="1" height="400px" width="400px">
+            <tr>
+                <td id="0" onclick="treasureFinder (0)">❓</td>
+                <td id="1" onclick="treasureFinder (1)">❓</td>
+                <td id="2" onclick="treasureFinder (2)">❓</td>
+            </tr>
+            <tr>
+                <td id="3" onclick="treasureFinder (3)">❓</td>
+                <td id="4" onclick="treasureFinder (4)">❓</td>
+                <td id="5" onclick="treasureFinder (5)">❓</td>
+            </tr>
+            <tr>
+                <td id="6" onclick="treasureFinder (6)">❓</td>
+                <td id="7" onclick="treasureFinder (7)">❓</td>
+                <td id="8" onclick="treasureFinder (8)">❓</td>
+            <tr>
+                <td id="9" onclick="treasureFinder (9)">❓</td>
+                <td id="10" onclick="treasureFinder (10)">❓</td>
+                <td id="11" onclick="treasureFinder (11)">❓</td>
+            </tr>
+            <tr>
+                <td id="12" onclick="treasureFinder (12)">❓</td>
+                <td id="13" onclick="treasureFinder (13)">❓</td>
+                <td id="14" onclick="treasureFinder (14)">❓</td>
+            </tr>
+            <tr>
+                    <td id="15" onclick="treasureFinder (15)">❓</td>
+                    <td id="16" onclick="treasureFinder (16)">❓</td>
+                    <td id="17" onclick="treasureFinder (17)">❓</td>
+            </tr>
+        </table>
+    </div>
+
+    <button type="button" onclick="location.reload()">Restart Game</button>
+
+    <footer>&copy; Wagner&Jontel LLC <a href="https://www.google.com/" target="_blank">Link</a></footer>
+    <script type="text/javascript" src="treasurehunt.js"></script>
+</body>
+
+</html>
